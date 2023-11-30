@@ -92,13 +92,13 @@ def make_data(df,k):
 
 
 if __name__ =='__main__':
-    train = pd.read_parquet(r'E:\608\NanoNet-main\paratope\data\parquet\train.parquet')
-    test = pd.read_parquet(r'E:\608\NanoNet-main\paratope\data\parquet\test.parquet')
-    val = pd.read_parquet(r'E:\608\NanoNet-main\paratope\data\parquet\val.parquet')
+    train = pd.read_parquet(r'\paratope\data\parquet\train.parquet')
+    test = pd.read_parquet(r'\paratope\data\parquet\test.parquet')
+    val = pd.read_parquet(r'\paratope\data\parquet\val.parquet')
 
-    val = set_coord(val,r'E:\608\NanoNet-main\paratope\data\PDB\val')
-    train = set_coord(train,r'E:\608\NanoNet-main\paratope\data\PDB\train')
-    test = set_coord(test,r'E:\608\NanoNet-main\paratope\data\PDB\test')
+    val = set_coord(val,r'\paratope\data\PDB\val')
+    train = set_coord(train,r'\paratope\data\PDB\train')
+    test = set_coord(test,r'\paratope\data\PDB\test')
 
     val = val.reset_index(drop = True)
     train = train.reset_index(drop = True)

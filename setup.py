@@ -17,7 +17,7 @@ setup(
         'torch-spline-conv==1.2.1+pt112cu113'
     ],
     author='Mengxiangpeng',
-    author_email='202002020117@ stumail.sztu.edu.com',
+    author_email='1354933501@qq.com',
     description='Nanobody paratope prediction using EGNN',
     url='https://github.com/Wo-oh-oh-ooh-oh/Nanotope',
 )

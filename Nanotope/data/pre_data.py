@@ -53,8 +53,8 @@ class NanotopeDataset(InMemoryDataset):
     def process(self):
         
         # Read data into huge `Data` list. using a parquet data structure
-        Nano = pd.read_parquet(r'E:\608\paratope\data\parquet\Nanobody_set.parquet')
-        Nano = set_coord(Nano,r'E:\608\paratope\data\PDB\nano')
+        Nano = pd.read_parquet(r'data\parquet\Nanobody_set.parquet')
+        Nano = set_coord(Nano,r'paratope\data\PDB\nano')
    
         Nano = Nano.reset_index(drop = True)
         data_list = self.make_data(Nano)

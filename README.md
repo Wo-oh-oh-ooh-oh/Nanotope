@@ -8,7 +8,7 @@ Nanobodies, from camelid species' immune system, are small artificial antibodies
 **Clone the repo**
 
 ```
-git clone https://github.com/Wo-oh-oh-ooh-oh/Nanotope
+git clone https://github.com/WangLabforComputationalBiology/Nanotope.git
 cd Nanotope
 ```
 

@@ -87,7 +87,7 @@ def Training(model,epochs,batch_size,train_data,test_data,k):
         print(pr_auc > pre_prauc)
         if pr_auc > pre_prauc and k>=0:
             print(1)
-            folder_path = os.path.join(r'E:\608\paratope\kfold',str(k))
+            folder_path = os.path.join(r'paratope\kfold',str(k))
             if not os.path.exists(folder_path):
                 os.makedirs(folder_path)
             torch.save(sum_label,os.path.join(folder_path,'label.pt'))
@@ -162,8 +162,8 @@ if __name__ =='__main__':
     flag = True
 
 
-    Nano_dataset = NanotopeDataset(r'E:\608\paratope\data\edge'+str(k)+'\\Nano')
-    heavy_dataset = NanotopeDataset(r'E:\608\paratope\data\edge'+str(k)+'\\Heavy_Fv')
+    Nano_dataset = NanotopeDataset(r'data\edge'+str(k)+'\\Nano')
+    heavy_dataset = NanotopeDataset(r'data\edge'+str(k)+'\\Heavy_Fv')
     #分割数据集
     subNano_dataset = Subset(Nano_dataset, range(400))
     subheavy_dataset = Subset(heavy_dataset,range(600))
@@ -182,7 +182,7 @@ if __name__ =='__main__':
 
     else:
         print('测试')
-        model.load_state_dict(torch.load(r'E:\608\paratope\model\pt\3.pt'))
+        model.load_state_dict(torch.load(r'\model\pt\3.pt'))
         model.eval().cuda()
         train_loader = DataLoader(test_data, batch_size=1, shuffle=True)  
         

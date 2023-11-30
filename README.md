@@ -28,5 +28,5 @@ If you encounter an error while installing the `torch_geometric` package, please
 
 # Usage
 
-If you want to predict a single nanobody, please refer to the method in **Nanotope/example/predict.ipynb** for prediction. If you want to perform batch prediction, please use **Nanotope/data/pre_data.py** to process a large batch of data and store it in memory before making predictions. Both of these prediction methods require **nanobody PDB files** and corresponding **heavy-chain IDs.**
+If you want to predict a single nanobody, please refer to the method in **Nanotope/example/predict.ipynb** for prediction. If you want to perform batch prediction, please use **Nanotope/data/pre_data.py** to process a large batch of data and store it in memory before making predictions. Both of these prediction methods require **nanobody PDB files** and corresponding **heavy-chain IDs**
 
